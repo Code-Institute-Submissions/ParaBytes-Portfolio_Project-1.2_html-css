@@ -1,3 +1,16 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('..\fonts\Quantify Bold.ttf');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+/*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 /*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
@@ -11,14 +24,13 @@
 /* General styles */
 
 body {
-    
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 }
 
 h1,h2,h3 {
-
-}
-
-/* Header */
-header {
-
+    font-family: 'Quantify', sans-serif; 
+    color: #ffffff;
+    letter-spacing: 3px;
 }
