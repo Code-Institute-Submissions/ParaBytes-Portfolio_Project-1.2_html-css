@@ -11,13 +11,22 @@
 }
 
 
-
-/* Asterisk wildcard selector to override default styles added by the browser */
-/*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* --------------------------------
+   Color Palette
+-------------------------------- */
+/* 
+   The :root pseudo-class is used to define global CSS variables, 
+   enabling consistency and ease of maintenance. For trying 
+   out different color palettes by only changing the properties inside the :root.
+*/
+:root {
+    /* CSS Variables Declaration */
+    --color-primary: #12743c;
+    --color-secondary: #9c1313;
+    --color-dark: rgba(14, 17, 15, 0.966);
+    --color-mid-dark: #474b4f;
+    --color-mid-light: #6b6e70;
+    --text-color: #cccccc; 
 }
 
 
@@ -26,11 +35,169 @@
 body {
     background-color: black;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 h1,h2,h3 {
     font-family: 'Quantify', sans-serif; 
-    color: #ffffff;
+    color: var(--text-color);
     letter-spacing: 3px;
+}
+
+/* Header */
+header {
+    background-color: var(--color-dark);
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0px 1px 3px var(--color-secondary),
+                0px 0px 100px var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .logo {
+        display: flex;
+        height: 49px;
+        width: auto;
+        align-items: center;
+            
+    }
+
+    /* Menu*/
+    #menu ul {
+        list-style-type: none;
+        font-size: 115%;    
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        text-align: center;
+        font-family: 'Quantify', sans-serif;
+    }
+
+    #menu>ul>li {
+        padding: 10px 0;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .active {
+        position: relative;
+    }
+
+    /*.active::after: to style underline idividually via box-shadow */
+    .active::after {
+        content: '';  /* creates empty content box. */
+        display: block;
+        width: 105%;
+        height: 0.1px; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0px 1px 1.75px var(--color-secondary);
+    }
+
+    /* Navbar styles with dropdown toggle */
+    nav {
+        position: absolute;
+        background-color: var(--color-dark);
+        width: 100%;
+        left: 0;
+        padding: 0 1rem;
+        box-shadow: 0px 1px 4px var(--color-secondary),
+                    0px 0px 50px var(--color-primary);
+        display: none;
+        top: 100%;
+    }
+
+
+    /* Nav toggle */
+    #menu-toggler:checked~nav {
+        display: block;
+    }
+
+    #menu-toggler {
+        display: none;
+    }
+
+    .menu-icon {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 0.175rem; 
+    }
+
+    .menu-icon path {
+        fill: var(--text-color);
+        stroke: var(--text-color);
+    }
+
+/*Main*/
+
+/*Hero Section*/
+.cyphex {
+    font-family: 'Quantify', sans-serif;
+}
+
+
+.logo-text-align {
+    display: flex;
+    align-items: center;
+}
+.logo-text-align .logo-text {
+    height: 30px;
+    width: auto; 
+    margin-right: 10px; 
+}
+
+#red {
+    color: var(--color-secondary);
+    line-height: 1;
+}
+
+.cta-btn {
+    
+}
+
+.info-btn {
+
+}
+
+
+
+
+
+/* Code from Love Running Project by Codeinstitute */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+/* Footer */
+#links {
+    
+}
+
+
+/* @media screen properties from Love Running Project by Codeinstitute*/
+
+/* Large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+}
+
+/* Tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+/* Ultra wide devices (Wide screen desktops and TVs, 992px and up) */
+@media screen and (min-width: 1200px) {
 }
