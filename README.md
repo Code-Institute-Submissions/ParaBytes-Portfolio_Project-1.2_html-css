@@ -43,6 +43,9 @@ Cyphex is a fictional penetration testing company, and the Cyphex Penetration Te
   - The contact form allows users to get in touch with Cyphex easily. It typically includes fields for name, email, message, and possibly other relevant information.
   - This is a critical feature for lead generation and customer inquiries.
 
+  ## Detailed Development & Design Information:
+If you're interested in diving deeper into the development and design process of this project, please refer to the [Development&Design guide](dev_doc.md).
+
 
 
 <!--
