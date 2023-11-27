@@ -1,0 +1,24 @@
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+/*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* General styles */
+
+body {
+    
+}
+
+h1,h2,h3 {
+
+}
+
+/* Header */
+header {
+
+}
