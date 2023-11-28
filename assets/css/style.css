@@ -47,10 +47,13 @@ h1,h2,h3 {
 
 hr {
     border: none; 
-    height: 0.75px; 
     background-color: var(--color-secondary); 
     opacity: 0.6;
     box-shadow: 0px 0.75px 3px var(--color-secondary); 
+    border-bottom: 0.3px solid var(--color-secondary);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 0;
 }
 
 /* Header */
@@ -157,7 +160,13 @@ header {
     position: relative;
 }
 
+/* hero-text style */
+
 #hero-text {
+/* --------------------------------------
+---------adjust vertically middle--------
+------(50px down because of header)------
+-----------------------------------------*/
     background-color: var(--color-dark);
     position: absolute;
     left: 50%; /* Center horizontally */
@@ -188,29 +197,7 @@ header {
     margin-bottom: 20px
 }
 
-
-
-/* section text styles*/
-.cyphex {
-    font-family: 'Quantify', sans-serif;
-}
-
-
-
-.logo-text-align {
-    display: flex;
-    align-items: center;
-}
-.logo-text-align .logo-text {
-    height: 30px;
-    width: auto; 
-    margin-right: 10px; 
-}
-
-#red {
-    color: var(--color-secondary);
-    line-height: 1;
-}
+/* Hero CTA-Button */
 
 .cta-btn {
     display: block; 
@@ -234,11 +221,28 @@ header {
     border-color: transparent;
 }
 
+/* text styling */
+.cyphex {
+    font-family: 'Quantify', sans-serif;
+}
 
+.logo-text-align {
+    display: flex;
+    align-items: center;
+}
+.logo-text-align .logo-text {
+    height: 30px;
+    width: auto; 
+    margin-right: 10px; 
+}
 
-
+#red {
+    color: var(--color-secondary);
+    line-height: 1;
+}
 
 /* Footer */
+
 #links {
     
 }
