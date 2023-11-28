@@ -23,7 +23,8 @@
     /* CSS Variables Declaration */
     --color-primary: #12743c;
     --color-secondary: #9c1313;
-    --color-dark: rgba(14, 17, 15, 0.966);
+    --color-dark: #000000da;
+    --color-darker: #000000f8;
     --color-mid-dark: #474b4f;
     --color-mid-light: #6b6e70;
     --text-color: #cccccc; 
@@ -104,7 +105,7 @@ header {
     /* Navbar styles with dropdown toggle */
     nav {
         position: absolute;
-        background-color: var(--color-dark);
+        background-color: var(--color-darker);
         width: 100%;
         left: 0;
         padding: 0 1rem;
@@ -138,9 +139,55 @@ header {
 /*Main*/
 
 /*Hero Section*/
+
+
+/* Code from Love Running Project by Codeinstitute */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#hero-text {
+    background-color: var(--color-dark);
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+    width: 90%;
+    min-height: 300px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#hero-text>h1 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px
+}
+
+#hero-text>h2 {
+    font-size: 17px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+#hero-text>p {
+    font-size: 14px;
+    line-height: 25px;
+
+    margin-bottom: 20px
+}
+
+
+
+/* section text styles*/
 .cyphex {
     font-family: 'Quantify', sans-serif;
 }
+
 
 
 .logo-text-align {
@@ -169,14 +216,6 @@ header {
 
 
 
-
-/* Code from Love Running Project by Codeinstitute */
-#hero {
-    height: 600px;
-    width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
-    position: relative;
-}
 
 /* Footer */
 #links {
