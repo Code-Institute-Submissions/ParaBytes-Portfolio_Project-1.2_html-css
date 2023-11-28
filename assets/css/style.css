@@ -261,6 +261,23 @@ header {
     transform: translate(-10%, 0);
 }
 
+/* Clients Section */
+
+#clients {
+    text-align: center;
+}
+
+.clients-text {
+    margin-bottom: 20px;
+}
+
+.clients-logos img {
+    width: 25%; /* Adjust size as needed */
+    margin: 0 2%; /* Adjust spacing as needed */
+    vertical-align: middle;
+    display: inline-block; /* Puts logos in a row */
+}
+
 /* Footer */
 
 #links {
