@@ -241,6 +241,26 @@ header {
     line-height: 1;
 }
 
+.underline-effect {
+    display: inline-block; 
+    position: relative; 
+    margin-bottom: 21.6px;
+}
+
+.underline-effect::after {
+    content: '';
+    display: block;
+    margin-top: 0.1em;
+    height: 0;
+    background: var(--color-secondary);
+    opacity: 0.6;
+    box-shadow: 0px 0.75px 3px var(--color-secondary);
+    border-bottom: 0.3px solid var(--color-secondary);
+    width: 120%;
+    position: absolute;
+    transform: translate(-10%, 0);
+}
+
 /* Footer */
 
 #links {
