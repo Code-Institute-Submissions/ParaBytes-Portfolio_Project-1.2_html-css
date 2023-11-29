@@ -140,6 +140,7 @@ header {
         width: 3rem;
         height: 3rem;
         margin-top: 0.175rem; 
+        cursor: pointer;
     }
 
     .menu-icon path {
@@ -212,7 +213,6 @@ header {
     border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
     border-radius: 20px;
     margin-bottom: 10px;
-    
 }
 
 .cta-btn:hover, .info-btn:hover {
@@ -235,7 +235,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* auto-fit` adjusts number of columns based on content */
     grid-auto-rows: 40px; 
-    gap: 10px;
+    gap: 45px 10px;
     justify-items: center;
     align-items: center;
     margin-top: 30px;
@@ -249,6 +249,81 @@ header {
     object-fit: contain; 
     margin: 10px; 
 }
+
+/* Testimonials - Slider*/
+
+#testimonials {
+    text-align: center;
+  }
+
+.slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .testimonials {
+    display: flex;
+    overflow: hidden;
+    width: 300%; 
+  }
+  
+  .testimonial {
+    width: calc(100% / 3); /* number of testimonials */
+    box-sizing: border-box;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* circular shape */
+    display: block;
+    margin: 0 auto 35px;
+    box-shadow: 0px 1px 6px var(--color-secondary);
+  }
+  
+  /* Hide the radio buttons */
+  input[name="testimonial"] {
+    display: none;
+  }
+  
+  /* When a radio button is selected, move testimonials container to next */
+  input[name="testimonial"]:nth-of-type(1):checked ~ .testimonials {
+    transform: translateX(0%);
+  }
+  input[name="testimonial"]:nth-of-type(2):checked ~ .testimonials {
+    transform: translateX(-33.333%); 
+  }
+  input[name="testimonial"]:nth-of-type(3):checked ~ .testimonials {
+    transform: translateX(-66.666%);
+  }
+  
+  .slider-nav {
+    text-align: center;
+  }
+  
+  .nav-dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1.5px; 
+    background-color: var(--color-darker); 
+    box-shadow: 0px 1px 6px var(--color-secondary); 
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  /* Change nav-dot color when the slide is active */
+  input[name="testimonial"]:nth-of-type(1):checked ~ .slider-nav #slide-dot-1,
+  input[name="testimonial"]:nth-of-type(2):checked ~ .slider-nav #slide-dot-2,
+  input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav #slide-dot-3 {
+    background-color: var(--color-secondary);
+  }
+  
 
 /* text styling */
 .cyphex {
