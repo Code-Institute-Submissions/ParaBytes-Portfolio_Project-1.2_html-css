@@ -12,7 +12,7 @@
 
 
 /* --------------------------------
-   Color Palette
+-----------Color Palette-----------
 -------------------------------- */
 /* 
    The :root pseudo-class is used to define global CSS variables, 
@@ -30,8 +30,10 @@
     --text-color: #cccccc; 
 }
 
+/* --------------------------------
+----------- General Styles --------
+-------------------------------- */
 
-/* General styles */
 
 body {
     background-color: black;
@@ -56,7 +58,56 @@ hr {
     height: 0;
 }
 
-/* Header */
+/* --------------------------------
+----------- Text Styling ----------
+-------------------------------- */
+
+.cyphex {
+    font-family: 'Quantify', sans-serif;
+}
+
+.logo-text-align {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text-align .logo-text {
+    height: 30px;
+    width: auto; 
+    margin-right: 10px; 
+}
+
+.red {
+    color: var(--color-secondary);
+    line-height: 1;
+}
+
+.underline-effect {
+    display: inline-block; 
+    position: relative; 
+    margin-bottom: 21.6px;
+}
+
+.underline-effect::after {
+    content: '';
+    display: block;
+    margin-top: 0.1em;
+    height: 0;
+    background: var(--color-secondary);
+    opacity: 0.6;
+    box-shadow: 0px 0.75px 3px var(--color-secondary);
+    border-bottom: 0.3px solid var(--color-secondary);
+    width: 120%;
+    position: absolute;
+    transform: translate(-10%, 0);
+}
+
+
+
+
+/* --------------------------------
+-------------- Header -------------
+-------------------------------- */
 header {
     background-color: var(--color-dark);
     padding: 0 1rem;
@@ -78,7 +129,9 @@ header {
             
     }
 
-    /* Menu*/
+    /* --------------------------------
+    ---------- Menu & Navbar ----------
+    -------------------------------- */
     #menu ul {
         list-style-type: none;
         font-size: 115%;    
@@ -148,9 +201,14 @@ header {
         stroke: var(--text-color);
     }
 
-/*Main*/
+/* --------------------------------
+-------------- Main ---------------
+-------------------------------- */
 
-/*Hero Section*/
+
+/* --------------------------------
+----------- Hero Section ----------
+-------------------------------- */
 
 
 /* Code from Love Running Project by Codeinstitute */
@@ -180,19 +238,19 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#hero-text>h1 {
+#hero-text h1 {
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 10px
 }
 
-#hero-text>h2 {
+#hero-text h2 {
     font-size: 17px;
     line-height: 18px;
     margin-bottom: 20px;
 }
 
-#hero-text>p {
+#hero-text p {
     font-size: 14px;
     line-height: 25px;
     margin-bottom: 20px
@@ -221,7 +279,9 @@ header {
     border-color: transparent;
 }
 
-/* Clients Section */
+/* --------------------------------
+--------- Clients Section ---------
+-------------------------------- */
 
 #clients {
     text-align: center;
@@ -250,7 +310,32 @@ header {
     margin: 10px; 
 }
 
-/* Testimonials - Slider */
+/* --------------------------------
+---------- About Section ----------
+-------------------------------- */
+
+/* --------------------------------
+-------- Services Section ---------
+-------------------------------- */
+
+#services {
+    text-align: center;
+}
+
+.service-container {
+    margin-bottom: 20px;
+}
+
+.text-content, .image-content {
+    margin-bottom: 10px;
+}
+
+
+/* --------------------------------
+------- Testimonial Section -------
+-------------- Slider -------------
+-------------------------------- */
+
 #testimonials {
     text-align: center;
 }
@@ -263,8 +348,8 @@ header {
 .testimonials {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center children horizontally */
-    justify-content: center; /* Center children vertically */
+    align-items: center; 
+    justify-content: center;
     width: 100%;
     margin-bottom: 21.6px;
 }
@@ -273,7 +358,7 @@ header {
     display: none; /* Hide all testimonials initially */
     width: 100%;
     box-sizing: border-box;
-    transition: opacity 0.3s, visibility 0.3s; /* transition effect between testimonials */
+    transition: opacity 0.3s, visibility 0.3s; /* smooth transition effect between testimonials */
 }
 
 .testimonial-content {
@@ -334,55 +419,24 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
     z-index: 2; /* Ensures it's above other elements */
     gap: 45px;
 }
-  
 
-/* text styling */
-.cyphex {
-    font-family: 'Quantify', sans-serif;
-}
+/* --------------------------------
+---------- Contact Form -----------
+-------------------------------- */
 
-.logo-text-align {
-    display: flex;
-    align-items: center;
-}
 
-.logo-text-align .logo-text {
-    height: 30px;
-    width: auto; 
-    margin-right: 10px; 
-}
-
-.red {
-    color: var(--color-secondary);
-    line-height: 1;
-}
-
-.underline-effect {
-    display: inline-block; 
-    position: relative; 
-    margin-bottom: 21.6px;
-}
-
-.underline-effect::after {
-    content: '';
-    display: block;
-    margin-top: 0.1em;
-    height: 0;
-    background: var(--color-secondary);
-    opacity: 0.6;
-    box-shadow: 0px 0.75px 3px var(--color-secondary);
-    border-bottom: 0.3px solid var(--color-secondary);
-    width: 120%;
-    position: absolute;
-    transform: translate(-10%, 0);
-}
-
-/* Footer */
+/* --------------------------------
+------------- Footer --------------
+-------------------------------- */
 
 #links {
     
 }
 
+
+/* --------------------------------
+------------- @ Media -------------
+-------------------------------- */
 
 /* @media screen properties from Love Running Project by Codeinstitute*/
 
