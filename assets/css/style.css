@@ -326,10 +326,21 @@ header {
     margin-bottom: 20px;
 }
 
-.text-content, .image-content {
+.services-text, .services-image {
     margin-bottom: 10px;
 }
 
+
+.services-image img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.services-image {
+    max-width: 500px;
+    width: 100%; 
+    margin: auto;
+}
 
 /* --------------------------------
 ------- Testimonial Section -------
