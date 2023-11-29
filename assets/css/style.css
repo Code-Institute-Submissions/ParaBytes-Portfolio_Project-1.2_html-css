@@ -25,7 +25,7 @@
     --color-secondary: #9c1313;
     --color-dark: #000000da;
     --color-darker: #000000f8;
-    --color-mid-dark: #474b4f;
+    --color-mid-dark: #2f363151;
     --color-mid-light: #6b6e70;
     --text-color: #cccccc; 
 }
@@ -209,16 +209,45 @@ header {
     font-size: 16px;
     background-color: var(--color-dark);
     color: var(--text-color);
-    border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 50% opacity */
+    border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
     border-radius: 20px;
     margin-bottom: 10px;
     
 }
 
 .cta-btn:hover, .info-btn:hover {
-    background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 50% opacity */
+    background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
     color: #ffffff; /* changes text color on hover */
     border-color: transparent;
+}
+
+/* Clients Section */
+
+#clients {
+    text-align: center;
+}
+
+.clients-text {
+    margin-bottom: 30px;
+}
+
+.brands-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* auto-fit` adjusts number of columns based on content */
+    grid-auto-rows: 40px; 
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+
+.brands-container img {
+    max-width: auto; 
+    max-height: 40px; 
+    object-fit: contain; 
+    margin: 10px; 
 }
 
 /* text styling */
@@ -230,13 +259,14 @@ header {
     display: flex;
     align-items: center;
 }
+
 .logo-text-align .logo-text {
     height: 30px;
     width: auto; 
     margin-right: 10px; 
 }
 
-#red {
+.red {
     color: var(--color-secondary);
     line-height: 1;
 }
@@ -259,23 +289,6 @@ header {
     width: 120%;
     position: absolute;
     transform: translate(-10%, 0);
-}
-
-/* Clients Section */
-
-#clients {
-    text-align: center;
-}
-
-.clients-text {
-    margin-bottom: 20px;
-}
-
-.clients-logos img {
-    width: 25%; /* Adjust size as needed */
-    margin: 0 2%; /* Adjust spacing as needed */
-    vertical-align: middle;
-    display: inline-block; /* Puts logos in a row */
 }
 
 /* Footer */
