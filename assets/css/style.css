@@ -326,20 +326,19 @@ header {
     margin-bottom: 20px;
 }
 
-.services-text, .services-image {
-    margin-bottom: 10px;
+.service-text h2 {
+    margin-bottom: 0.5em;
 }
 
-
-.services-image img {
-    max-width: 100%; 
-    height: auto; 
+/* Mobile styles */
+.service-text, .service-image {
+    width: 100%;
+    margin-bottom: 1em;
 }
 
-.services-image {
-    max-width: 500px;
-    width: 100%; 
-    margin: auto;
+.service-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* --------------------------------
@@ -457,11 +456,23 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
 
 /* Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    
+    /* --------------------------------
+-------- Services Section ---------
+-------------------------------- */
+    
+    
+
+    
+/* --------------------------------
+------- Testimonial Section -------
+-------------- Slider -------------
+-------------------------------- */
+
     .nav-dot {
         cursor: pointer;
     }
 }
-
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 }
