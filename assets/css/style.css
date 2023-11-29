@@ -223,10 +223,7 @@ nav {
   position: absolute;
   left: 50%; /* Center horizontally */
   top: 50%; /* Center vertically */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Offset the element by half its width and height */
+  transform: translate(-50%, -50%); /* Offset the element by half its width and height */
   width: 90%;
   min-height: 300px;
   padding: 5px;
@@ -269,18 +266,6 @@ nav {
   margin-bottom: 10px;
 }
 
-.cta-btn:hover,
-.info-btn:hover {
-  background-color: rgba(
-    156,
-    19,
-    19,
-    0.6
-  ); /* --color-secondary with 60% opacity */
-  color: #ffffff; /* changes text color on hover */
-  border-color: transparent;
-}
-
 /* --------------------------------
 --------- Clients Section ---------
 -------------------------------- */
@@ -295,10 +280,7 @@ nav {
 
 .brands-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(100px, 1fr)
-  ); /* auto-fit` adjusts number of columns based on content */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* auto-fit` adjusts number of columns based on content */
   grid-auto-rows: 40px;
   gap: 45px 10px;
   justify-items: center;
@@ -393,15 +375,9 @@ nav {
 }
 
 /* Display the active testimonial */
-input[name="testimonial"]:nth-of-type(1):checked
-  ~ .testimonials
-  .testimonial:nth-of-type(1),
-input[name="testimonial"]:nth-of-type(2):checked
-  ~ .testimonials
-  .testimonial:nth-of-type(2),
-input[name="testimonial"]:nth-of-type(3):checked
-  ~ .testimonials
-  .testimonial:nth-of-type(3) {
+input[name="testimonial"]:nth-of-type(1):checked ~ .testimonials .testimonial:nth-of-type(1),
+input[name="testimonial"]:nth-of-type(2):checked ~ .testimonials .testimonial:nth-of-type(2),
+input[name="testimonial"]:nth-of-type(3):checked ~ .testimonials .testimonial:nth-of-type(3) {
   display: flex;
 }
 
@@ -427,15 +403,9 @@ input[name="testimonial"] {
 }
 
 /* Change nav-dot color when slide is active */
-input[name="testimonial"]:nth-of-type(1):checked
-  ~ .slider-nav
-  .nav-dot:nth-of-type(1),
-input[name="testimonial"]:nth-of-type(2):checked
-  ~ .slider-nav
-  .nav-dot:nth-of-type(2),
-input[name="testimonial"]:nth-of-type(3):checked
-  ~ .slider-nav
-  .nav-dot:nth-of-type(3) {
+input[name="testimonial"]:nth-of-type(1):checked ~ .slider-nav .nav-dot:nth-of-type(1),
+input[name="testimonial"]:nth-of-type(2):checked ~ .slider-nav .nav-dot:nth-of-type(2),
+input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-type(3) {
   background-color: var(--color-secondary);
 }
 
@@ -451,6 +421,67 @@ input[name="testimonial"]:nth-of-type(3):checked
 /* --------------------------------
 ---------- Contact Form -----------
 -------------------------------- */
+
+#contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.heading-container {
+    text-align: center;
+    margin: 20px auto;
+    display: table; /* shrink container width to fit content */
+    width: auto;
+}
+
+.form-group {
+    width: 100%; /* Each group takes full width on mobile */
+    margin-bottom: 10px;
+  }
+
+.form-group label {
+  display: block;
+}
+
+.form-group input[type="url"],
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical; /* resize text area vertically */
+}
+
+/*submit button*/
+.submit-container {
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+button[type="submit"] {
+float: right;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #000;
+  color: var(--text-color);
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: var(--color-dark);
+  color: var(--text-color);
+  border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+  border-radius: 20px;
+}
+
 
 /* --------------------------------
 ------------- Footer --------------
@@ -471,6 +502,17 @@ input[name="testimonial"]:nth-of-type(3):checked
 
 /* Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
+/* --------------------------------
+----------- Hero Section ----------
+-------------------------------- */
+
+.cta-btn:hover {
+    background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+    color: #ffffff; /* changes text color on hover */
+    border-color: transparent;
+  }
+  
   /* --------------------------------
 -------- Services Section ---------
 -------------------------------- */
@@ -510,6 +552,20 @@ input[name="testimonial"]:nth-of-type(3):checked
   .service-image img {
     max-width: 100%;
     height: auto;
+  }
+
+/* --------------------------------
+---------- Contact Form -----------
+-------------------------------- */
+
+  button[type="submit"] {
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+    color: #ffffff; /* changes text color on hover */
+    border-color: transparent;
   }
 
   /* --------------------------------
