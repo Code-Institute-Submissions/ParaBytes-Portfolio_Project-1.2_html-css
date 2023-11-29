@@ -70,7 +70,7 @@ In the subsequent sections of this guide, I will detail the steps taken during t
 - Following the mentor session, marginal adjustments to the wireframe were made. - Ultimately created a final version using "Justinmind." <p>(However, becoming familiar with this tool took more time than initially anticipated, even though it's straight forward.)
 
 <p>
-    <img src="assets\images\presentation\WireFrame.png" alt="WireFrame" style="width:656px";>
+    <img src="assets\images\presentation\wireframe.png" alt="WireFrame" style="width:656px";>
 </p>
 
 

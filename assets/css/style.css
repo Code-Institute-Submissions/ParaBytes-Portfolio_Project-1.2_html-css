@@ -1,15 +1,14 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-@import url('..\fonts\Quantify Bold.ttf');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("..\fonts\quantify-bold.ttf");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 /*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 
 /* --------------------------------
 -----------Color Palette-----------
@@ -20,42 +19,43 @@
    out different color palettes by only changing the properties inside the :root.
 */
 :root {
-    /* CSS Variables Declaration */
-    --color-primary: #12743c;
-    --color-secondary: #9c1313;
-    --color-dark: #000000da;
-    --color-darker: #000000f8;
-    --color-mid-dark: #2f363151;
-    --color-mid-light: #6b6e70;
-    --text-color: #cccccc; 
+  /* CSS Variables Declaration */
+  --color-primary: #12743c;
+  --color-secondary: #9c1313;
+  --color-dark: #000000da;
+  --color-darker: #000000f8;
+  --color-mid-dark: #2f363151;
+  --color-mid-light: #6b6e70;
+  --text-color: #cccccc;
 }
 
 /* --------------------------------
 ----------- General Styles --------
 -------------------------------- */
 
-
 body {
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--text-color);
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
 }
 
-h1,h2,h3 {
-    font-family: 'Quantify', sans-serif; 
-    color: var(--text-color);
-    letter-spacing: 3px;
+h1,
+h2,
+h3 {
+  font-family: "Quantify", sans-serif;
+  color: var(--text-color);
+  letter-spacing: 3px;
 }
 
 hr {
-    border: none; 
-    background-color: var(--color-secondary); 
-    opacity: 0.6;
-    box-shadow: 0px 0.75px 3px var(--color-secondary); 
-    border-bottom: 0.3px solid var(--color-secondary);
-    margin-top: 5px;
-    margin-bottom: 20px;
-    height: 0;
+  border: none;
+  background-color: var(--color-secondary);
+  opacity: 0.6;
+  box-shadow: 0px 0.75px 3px var(--color-secondary);
+  border-bottom: 0.3px solid var(--color-secondary);
+  margin-top: 5px;
+  margin-bottom: 20px;
+  height: 0;
 }
 
 /* --------------------------------
@@ -63,220 +63,222 @@ hr {
 -------------------------------- */
 
 .cyphex {
-    font-family: 'Quantify', sans-serif;
+  font-family: "Quantify", sans-serif;
 }
 
 .logo-text-align {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-text-align .logo-text {
-    height: 30px;
-    width: auto; 
-    margin-right: 10px; 
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
 }
 
 .red {
-    color: var(--color-secondary);
-    line-height: 1;
+  color: var(--color-secondary);
+  line-height: 1;
 }
 
 .underline-effect {
-    display: inline-block; 
-    position: relative; 
-    margin-bottom: 21.6px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 21.6px;
 }
 
 .underline-effect::after {
-    content: '';
-    display: block;
-    margin-top: 0.1em;
-    height: 0;
-    background: var(--color-secondary);
-    opacity: 0.6;
-    box-shadow: 0px 0.75px 3px var(--color-secondary);
-    border-bottom: 0.3px solid var(--color-secondary);
-    width: 120%;
-    position: absolute;
-    transform: translate(-10%, 0);
+  content: "";
+  display: block;
+  margin-top: 0.1em;
+  height: 0;
+  background: var(--color-secondary);
+  opacity: 0.6;
+  box-shadow: 0px 0.75px 3px var(--color-secondary);
+  border-bottom: 0.3px solid var(--color-secondary);
+  width: 120%;
+  position: absolute;
+  transform: translate(-10%, 0);
 }
-
-
-
 
 /* --------------------------------
 -------------- Header -------------
 -------------------------------- */
 header {
-    background-color: var(--color-dark);
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0px 1px 3px var(--color-secondary),
-                0px 0px 100px var(--color-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--color-dark);
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0px 1px 3px var(--color-secondary),
+    0px 0px 100px var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-    .logo {
-        display: flex;
-        height: 49px;
-        width: auto;
-        align-items: center;
-            
-    }
+.logo {
+  display: flex;
+  height: 49px;
+  width: auto;
+  align-items: center;
+}
 
-    /* --------------------------------
+/* --------------------------------
     ---------- Menu & Navbar ----------
     -------------------------------- */
-    #menu ul {
-        list-style-type: none;
-        font-size: 115%;    
-        letter-spacing: 1px;
-        word-spacing: 4px;
-        text-align: center;
-        font-family: 'Quantify', sans-serif;
-    }
+#menu ul {
+  list-style-type: none;
+  font-size: 115%;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-align: center;
+  font-family: "Quantify", sans-serif;
+}
 
-    #menu>ul>li {
-        padding: 10px 0;
-    }
+#menu > ul > li {
+  padding: 10px 0;
+}
 
-    #menu a {
-        text-decoration: none;
-        color: var(--text-color);
-    }
+#menu a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
-    .active {
-        position: relative;
-    }
+.active {
+  position: relative;
+}
 
-    /*.active::after: to style underline idividually via box-shadow */
-    .active::after {
-        content: '';  /* creates empty content box. */
-        display: block;
-        width: 105%;
-        height: 0.1px; 
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        box-shadow: 0px 1px 1.75px var(--color-secondary);
-    }
+/*.active::after: to style underline idividually via box-shadow */
+.active::after {
+  content: ""; /* creates empty content box. */
+  display: block;
+  width: 105%;
+  height: 0.1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 1px 1.75px var(--color-secondary);
+}
 
-    /* Navbar styles with dropdown toggle */
-    nav {
-        position: absolute;
-        background-color: var(--color-darker);
-        width: 100%;
-        left: 0;
-        padding: 0 1rem;
-        box-shadow: 0px 1px 4px var(--color-secondary),
-                    0px 0px 50px var(--color-primary);
-        display: none;
-        top: 100%;
-    }
+/* Navbar styles with dropdown toggle */
+nav {
+  position: absolute;
+  background-color: var(--color-darker);
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0px 1px 4px var(--color-secondary),
+    0px 0px 50px var(--color-primary);
+  display: none;
+  top: 100%;
+}
 
+/* Nav toggle */
+#menu-toggler:checked ~ nav {
+  display: block;
+}
 
-    /* Nav toggle */
-    #menu-toggler:checked~nav {
-        display: block;
-    }
+#menu-toggler {
+  display: none;
+}
 
-    #menu-toggler {
-        display: none;
-    }
+.menu-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.175rem;
+  cursor: pointer;
+}
 
-    .menu-icon {
-        width: 3rem;
-        height: 3rem;
-        margin-top: 0.175rem; 
-        cursor: pointer;
-    }
-
-    .menu-icon path {
-        fill: var(--text-color);
-        stroke: var(--text-color);
-    }
+.menu-icon path {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
 
 /* --------------------------------
 -------------- Main ---------------
 -------------------------------- */
 
-
 /* --------------------------------
 ----------- Hero Section ----------
 -------------------------------- */
 
-
 /* Code from Love Running Project by Codeinstitute */
 #hero {
-    height: 600px;
-    width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
-    position: relative;
+  height: 600px;
+  width: 100%;
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
+  position: relative;
 }
 
 /* hero-text style */
 
 #hero-text {
-/* --------------------------------------
+  /* --------------------------------------
 ---------adjust vertically middle--------
 ------(50px down because of header)------
 -----------------------------------------*/
-    background-color: var(--color-dark);
-    position: absolute;
-    left: 50%; /* Center horizontally */
-    top: 50%; /* Center vertically */
-    transform: translate(-50%, -50%); /* Offset the element by half its width and height */
-    width: 90%;
-    min-height: 300px;
-    padding: 5px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: var(--color-dark);
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the element by half its width and height */
+  width: 90%;
+  min-height: 300px;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #hero-text h1 {
-    font-size: 22px;
-    line-height: 27px;
-    margin-bottom: 10px
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 10px;
 }
 
 #hero-text h2 {
-    font-size: 17px;
-    line-height: 18px;
-    margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 20px;
 }
 
 #hero-text p {
-    font-size: 14px;
-    line-height: 25px;
-    margin-bottom: 20px
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
 }
 
 /* Hero CTA-Button */
 
 .cta-btn {
-    display: block; 
-    width: 100%; 
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    background-color: var(--color-dark);
-    color: var(--text-color);
-    border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
-    border-radius: 20px;
-    margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: var(--color-dark);
+  color: var(--text-color);
+  border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
-.cta-btn:hover, .info-btn:hover {
-    background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
-    color: #ffffff; /* changes text color on hover */
-    border-color: transparent;
+.cta-btn:hover,
+.info-btn:hover {
+  background-color: rgba(
+    156,
+    19,
+    19,
+    0.6
+  ); /* --color-secondary with 60% opacity */
+  color: #ffffff; /* changes text color on hover */
+  border-color: transparent;
 }
 
 /* --------------------------------
@@ -284,30 +286,33 @@ header {
 -------------------------------- */
 
 #clients {
-    text-align: center;
+  text-align: center;
 }
 
 .clients-text {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .brands-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* auto-fit` adjusts number of columns based on content */
-    grid-auto-rows: 40px; 
-    gap: 45px 10px;
-    justify-items: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* auto-fit` adjusts number of columns based on content */
+  grid-auto-rows: 40px;
+  gap: 45px 10px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 15px;
 }
 
 .brands-container img {
-    max-width: auto; 
-    max-height: 40px; 
-    object-fit: contain; 
-    margin: 10px; 
+  max-width: auto;
+  max-height: 40px;
+  object-fit: contain;
+  margin: 10px;
 }
 
 /* --------------------------------
@@ -319,26 +324,27 @@ header {
 -------------------------------- */
 
 #services {
-    text-align: center;
+  text-align: center;
 }
 
 .service-container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .service-text h2 {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Mobile styles */
-.service-text, .service-image {
-    width: 100%;
-    margin-bottom: 1em;
+.service-text,
+.service-image {
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 .service-image img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* --------------------------------
@@ -347,102 +353,111 @@ header {
 -------------------------------- */
 
 #testimonials {
-    text-align: center;
+  text-align: center;
 }
 
 .slider {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .testimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 21.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 21.6px;
 }
 
 .testimonial {
-    display: none; /* Hide all testimonials initially */
-    width: 100%;
-    box-sizing: border-box;
-    transition: opacity 0.3s, visibility 0.3s; /* smooth transition effect between testimonials */
+  display: none; /* Hide all testimonials initially */
+  width: 100%;
+  box-sizing: border-box;
+  transition: opacity 0.3s, visibility 0.3s; /* smooth transition effect between testimonials */
 }
 
 .testimonial-content {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    padding: 21.6px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 21.6px 20px;
 }
 
 .testimonial-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto 35px;
-    box-shadow: 0px 1px 6px var(--color-secondary);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 35px;
+  box-shadow: 0px 1px 6px var(--color-secondary);
 }
 
 /* Display the active testimonial */
-input[name="testimonial"]:nth-of-type(1):checked ~ .testimonials .testimonial:nth-of-type(1),
-input[name="testimonial"]:nth-of-type(2):checked ~ .testimonials .testimonial:nth-of-type(2),
-input[name="testimonial"]:nth-of-type(3):checked ~ .testimonials .testimonial:nth-of-type(3) {
-    display: flex;
+input[name="testimonial"]:nth-of-type(1):checked
+  ~ .testimonials
+  .testimonial:nth-of-type(1),
+input[name="testimonial"]:nth-of-type(2):checked
+  ~ .testimonials
+  .testimonial:nth-of-type(2),
+input[name="testimonial"]:nth-of-type(3):checked
+  ~ .testimonials
+  .testimonial:nth-of-type(3) {
+  display: flex;
 }
 
 .slider-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-dot {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: var(--color-darker);
-    box-shadow: 0px 1px 6px var(--color-secondary);
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--color-darker);
+  box-shadow: 0px 1px 6px var(--color-secondary);
 }
 
 /* Hide radio buttons */
 input[name="testimonial"] {
-    display: none;
+  display: none;
 }
 
 /* Change nav-dot color when slide is active */
-input[name="testimonial"]:nth-of-type(1):checked ~ .slider-nav .nav-dot:nth-of-type(1),
-input[name="testimonial"]:nth-of-type(2):checked ~ .slider-nav .nav-dot:nth-of-type(2),
-input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-type(3) {
-    background-color: var(--color-secondary);
+input[name="testimonial"]:nth-of-type(1):checked
+  ~ .slider-nav
+  .nav-dot:nth-of-type(1),
+input[name="testimonial"]:nth-of-type(2):checked
+  ~ .slider-nav
+  .nav-dot:nth-of-type(2),
+input[name="testimonial"]:nth-of-type(3):checked
+  ~ .slider-nav
+  .nav-dot:nth-of-type(3) {
+  background-color: var(--color-secondary);
 }
-  
+
 .slider-nav {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    width: 100%;
-    z-index: 2; /* Ensures it's above other elements */
-    gap: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 2; /* Ensures it's above other elements */
+  gap: 45px;
 }
 
 /* --------------------------------
 ---------- Contact Form -----------
 -------------------------------- */
 
-
 /* --------------------------------
 ------------- Footer --------------
 -------------------------------- */
 
 #links {
-    
 }
-
 
 /* --------------------------------
 ------------- @ Media -------------
@@ -456,59 +471,55 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
 
 /* Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    
-    /* --------------------------------
+  /* --------------------------------
 -------- Services Section ---------
 -------------------------------- */
 
-    .service-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Or use 'center' if you want to center the items */
-        margin-bottom: 40px;
-    }
+  .service-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Or use 'center' if you want to center the items */
+    margin-bottom: 40px;
+  }
 
-    .service-container:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
+  .service-container:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
 
-    .service-container:nth-child(even) {
-        flex-direction: row;
-    }
+  .service-container:nth-child(even) {
+    flex-direction: row;
+  }
 
-    .service-text {
-        width: 50%;
-    }
+  .service-text {
+    width: 50%;
+  }
 
-    .service-text.service-text-right {
-        text-align: right;
-    }
+  .service-text.service-text-right {
+    text-align: right;
+  }
 
-    .service-text.service-text-left {
-        text-align: left;
-    }
+  .service-text.service-text-left {
+    text-align: left;
+  }
 
-    .service-image {
-        width: 50%;
-        /* Add styling to control image size and alignment */
-    }
+  .service-image {
+    width: 50%;
+    /* Add styling to control image size and alignment */
+  }
 
-    .service-image img {
-        max-width: 100%;
-        height: auto;
-    }
+  .service-image img {
+    max-width: 100%;
+    height: auto;
+  }
 
-    
-
-    
-/* --------------------------------
+  /* --------------------------------
 ------- Testimonial Section -------
 -------------- Slider -------------
 -------------------------------- */
 
-    .nav-dot {
-        cursor: pointer;
-    }
+  .nav-dot {
+    cursor: pointer;
+  }
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
