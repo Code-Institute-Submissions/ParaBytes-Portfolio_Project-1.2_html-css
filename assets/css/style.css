@@ -356,7 +356,7 @@ nav {
     display: none; /* Hide all testimonials initially */
     width: 100%;
     box-sizing: border-box;
-    transition: opacity 0.3s, visibility 0.3s; /* smooth transition effect between testimonials */
+    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition effect between testimonials */
 }
 
 .testimonial-content {
@@ -430,7 +430,7 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
 .heading-container {
     text-align: center;
     margin: 20px auto;
-    display: table; /* shrink container width to fit content */
+    display: table; /* Shrinks container width to fit content */
     width: auto;
 }
 
@@ -463,13 +463,13 @@ textarea {
 .form-group input[type="email"]:focus,
 textarea:focus {
     outline: none; /* Removes default outline */
-    border-color: var(--color-primary); /* border coler focus state */
+    border-color: var(--color-primary); /* Border color focus state */
     border-width: 2.4px;
 }
 
 textarea {
     height: 150px;
-    resize: vertical; /* resize text area vertically */
+    resize: vertical; /* Resize text area vertically */
 }
 
 /*submit button*/
@@ -524,7 +524,7 @@ button[type="submit"] {
 
 .cta-btn:hover {
     background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
-    color: #ffffff; /* changes text color on hover */
+    color: #ffffff; /* Changes text color on hover */
     border-color: transparent;
 }
 
@@ -535,7 +535,7 @@ button[type="submit"] {
 .service-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Or use 'center' */
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
