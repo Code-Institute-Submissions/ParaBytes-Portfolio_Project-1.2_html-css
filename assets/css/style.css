@@ -410,12 +410,12 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
 }
 
 .slider-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  z-index: 2; /* Ensures it's above other elements */
-  gap: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 2; /* Ensures it's above other elements */
+    gap: 45px;
 }
 
 /* --------------------------------
@@ -450,8 +450,21 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 10px; 
+    background-color: var(--text-color); 
+    color: black; /* Text color */
+    border: 0.7px solid rgba(156, 19, 19, 0.6);
+    border-radius: 5px;
+}
+
+.form-group input[type="url"]:focus,
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="email"]:focus,
+textarea:focus {
+    outline: none; /* Removes default outline */
+    border-color: var(--color-primary); /* border coler focus state */
+    border-width: 2.4px;
 }
 
 textarea {
@@ -461,16 +474,18 @@ textarea {
 
 /*submit button*/
 .submit-container {
-    padding: 10px 0;
+    padding: 10px 5%;
     margin-bottom: 25px;
+    align-items: center;
 }
 
 button[type="submit"] {
-    float: right;
-    padding: 10px 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
     margin-top: 10px;
     border: none;
-    background-color: #000;
+    background-color: black;
     color: var(--text-color);
     display: block;
     text-align: center;
@@ -563,11 +578,21 @@ button[type="submit"] {
 }
   
 .form-group {
-      flex-basis: 48%;
+    flex-basis: 48%;
+}
+
+.form-group input:hover {
+    border-color: darkred;
+    border-width: 2.3px;
 }
 
 button[type="submit"] {
     cursor: pointer;
+}
+
+.submit-container {
+    padding: 10px 20%;
+    margin-bottom: 50px;
 }
 
 button[type="submit"]:hover {
@@ -576,6 +601,8 @@ button[type="submit"]:hover {
     border-color: transparent;
 }
 
+
+
   /* --------------------------------
 ------- Testimonial Section -------
 -------------- Slider -------------
@@ -583,7 +610,7 @@ button[type="submit"]:hover {
 
   .nav-dot {
     cursor: pointer;
-  }
+}
 
 }
 /* Large devices (laptops and desktops, 992px and up) */
