@@ -437,7 +437,7 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
 .form-group {
     width: 100%; /* Each group takes full width on mobile */
     margin-bottom: 10px;
-  }
+}
 
 .form-group label {
   display: block;
@@ -511,62 +511,70 @@ float: right;
     background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
     color: #ffffff; /* changes text color on hover */
     border-color: transparent;
-  }
-  
+}
+
   /* --------------------------------
 -------- Services Section ---------
 -------------------------------- */
 
-  .service-container {
+.service-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Or use 'center' if you want to center the items */
+    justify-content: space-between; /* Or use 'center' */
     margin-bottom: 40px;
-  }
+}
 
-  .service-container:nth-child(odd) {
+.service-container:nth-child(odd) {
     flex-direction: row-reverse;
-  }
+}
 
-  .service-container:nth-child(even) {
+.service-container:nth-child(even) {
     flex-direction: row;
-  }
+}
 
-  .service-text {
+.service-text {
     width: 50%;
-  }
+}
 
-  .service-text.service-text-right {
-    text-align: right;
-  }
+.service-text.service-text-right {
+  text-align: right;
+}
 
-  .service-text.service-text-left {
+.service-text.service-text-left {
     text-align: left;
-  }
+}
 
-  .service-image {
+.service-image {
     width: 50%;
-    /* Add styling to control image size and alignment */
-  }
+}
 
-  .service-image img {
+.service-image img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 /* --------------------------------
 ---------- Contact Form -----------
 -------------------------------- */
 
-  button[type="submit"] {
-    cursor: pointer;
-  }
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.form-group {
+      flex-basis: 48%;
+}
 
-  button[type="submit"]:hover {
+button[type="submit"] {
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
     background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
     color: #ffffff; /* changes text color on hover */
     border-color: transparent;
-  }
+}
 
   /* --------------------------------
 ------- Testimonial Section -------
@@ -576,6 +584,7 @@ float: right;
   .nav-dot {
     cursor: pointer;
   }
+
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
