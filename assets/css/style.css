@@ -250,79 +250,90 @@ header {
     margin: 10px; 
 }
 
-/* Testimonials - Slider*/
-
+/* Testimonials - Slider */
 #testimonials {
     text-align: center;
-  }
+}
 
 .slider {
     position: relative;
     width: 100%;
-  }
-  
-  .testimonials {
+}
+
+.testimonials {
     display: flex;
-    overflow: hidden;
-    width: 300%; 
-  }
-  
-  .testimonial {
-    width: calc(100% / 3); /* number of testimonials */
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    width: 100%;
+    margin-bottom: 21.6px;
+}
+
+.testimonial {
+    display: none; /* Hide all testimonials initially */
+    width: 100%;
     box-sizing: border-box;
-    padding: 20px;
-    display: block;
-    text-align: center;
-    transition: transform 0.5s ease;
-  }
-  
-  .testimonial-image {
+    transition: opacity 0.3s, visibility 0.3s; /* transition effect between testimonials */
+}
+
+.testimonial-content {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 21.6px 20px;
+}
+
+.testimonial-image {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* circular shape */
-    display: block;
+    border-radius: 50%;
     margin: 0 auto 35px;
     box-shadow: 0px 1px 6px var(--color-secondary);
-  }
-  
-  /* Hide the radio buttons */
-  input[name="testimonial"] {
-    display: none;
-  }
-  
-  /* When a radio button is selected, move testimonials container to next */
-  input[name="testimonial"]:nth-of-type(1):checked ~ .testimonials {
-    transform: translateX(0%);
-  }
-  input[name="testimonial"]:nth-of-type(2):checked ~ .testimonials {
-    transform: translateX(-33.333%); 
-  }
-  input[name="testimonial"]:nth-of-type(3):checked ~ .testimonials {
-    transform: translateX(-66.666%);
-  }
-  
-  .slider-nav {
-    text-align: center;
-  }
-  
-  .nav-dot {
+}
+
+/* Display the active testimonial */
+input[name="testimonial"]:nth-of-type(1):checked ~ .testimonials .testimonial:nth-of-type(1),
+input[name="testimonial"]:nth-of-type(2):checked ~ .testimonials .testimonial:nth-of-type(2),
+input[name="testimonial"]:nth-of-type(3):checked ~ .testimonials .testimonial:nth-of-type(3) {
+    display: flex;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-dot {
     display: inline-block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    border: 1.5px; 
-    background-color: var(--color-darker); 
-    box-shadow: 0px 1px 6px var(--color-secondary); 
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  /* Change nav-dot color when the slide is active */
-  input[name="testimonial"]:nth-of-type(1):checked ~ .slider-nav #slide-dot-1,
-  input[name="testimonial"]:nth-of-type(2):checked ~ .slider-nav #slide-dot-2,
-  input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav #slide-dot-3 {
+    background-color: var(--color-darker);
+    box-shadow: 0px 1px 6px var(--color-secondary);
+}
+
+/* Hide radio buttons */
+input[name="testimonial"] {
+    display: none;
+}
+
+/* Change nav-dot color when slide is active */
+input[name="testimonial"]:nth-of-type(1):checked ~ .slider-nav .nav-dot:nth-of-type(1),
+input[name="testimonial"]:nth-of-type(2):checked ~ .slider-nav .nav-dot:nth-of-type(2),
+input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-type(3) {
     background-color: var(--color-secondary);
-  }
+}
+  
+.slider-nav {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    z-index: 2; /* Ensures it's above other elements */
+    gap: 45px;
+}
   
 
 /* text styling */
@@ -381,6 +392,9 @@ header {
 
 /* Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    .nav-dot {
+        cursor: pointer;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
