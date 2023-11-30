@@ -34,7 +34,7 @@
 -------------------------------- */
 
 body {
-    background-color: black;
+    background-color: var(--color-darker);
     font-family: "Montserrat", sans-serif;
     color: var(--text-color);
 }
@@ -503,7 +503,7 @@ button[type="submit"] {
 -------------------------------- */
 
 .footer-links a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -513,12 +513,15 @@ button[type="submit"] {
 
 .social-links {
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
 .social-links a {
-    margin: 0 10px;
     display: inline-block;
+}
+
+.social-links a:not(:first-child) {   /*removes margin left from the first icon*/
+    margin-left: 15px;
 }
 
 /* --------------------------------
@@ -649,7 +652,7 @@ button[type="submit"] {
         text-decoration: underline;
         color: #9c1313;
     }
-    
+
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
