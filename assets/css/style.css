@@ -39,9 +39,7 @@ body {
     color: var(--text-color);
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3,h4 {
     font-family: "Quantify", sans-serif;
     color: var(--text-color);
     letter-spacing: 3px;
@@ -53,10 +51,9 @@ hr {
     opacity: 0.6;
     box-shadow: 0px 0.75px 3px var(--color-secondary);
     border-bottom: 0.3px solid var(--color-secondary);
-    margin-top: 5px;
-    margin-bottom: 20px;
     height: 0;
 }
+
 
 /* --------------------------------
 ----------- Text Styling ----------
@@ -126,8 +123,9 @@ header {
 }
 
 /* --------------------------------
-    ---------- Menu & Navbar ----------
-    -------------------------------- */
+---------- Menu & Navbar ----------
+------------------------------- */
+
 #menu ul {
     list-style-type: none;
     font-size: 115%;
@@ -199,6 +197,8 @@ nav {
 /* --------------------------------
 -------------- Main ---------------
 -------------------------------- */
+
+
 
 /* --------------------------------
 ----------- Hero Section ----------
@@ -502,7 +502,23 @@ button[type="submit"] {
 ------------- Footer --------------
 -------------------------------- */
 
-#links {
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
 /* --------------------------------
@@ -522,96 +538,118 @@ button[type="submit"] {
 ----------- Hero Section ----------
 -------------------------------- */
 
-.cta-btn:hover {
-    background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
-    color: #ffffff; /* Changes text color on hover */
-    border-color: transparent;
-}
+    .cta-btn:hover {
+        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+        color: #ffffff; /* Changes text color on hover */
+        border-color: transparent;
+    }
 
-  /* --------------------------------
--------- Services Section ---------
--------------------------------- */
+    /* --------------------------------
+    -------- Services Section ---------
+    -------------------------------- */
 
-.service-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
+    .service-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
 
-.service-container:nth-child(odd) {
-    flex-direction: row-reverse;
-}
+    .service-container:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 
-.service-container:nth-child(even) {
-    flex-direction: row;
-}
+    .service-container:nth-child(even) {
+        flex-direction: row;
+    }
 
-.service-text {
-    width: 50%;
-}
+    .service-text {
+        width: 50%;
+    }
 
-.service-text.service-text-right {
-  text-align: right;
-}
+    .service-text.service-text-right {
+    text-align: right;
+    }
 
-.service-text.service-text-left {
-    text-align: left;
-}
+    .service-text.service-text-left {
+        text-align: left;
+    }
 
-.service-image {
-    width: 50%;
-}
+    .service-image {
+        width: 50%;
+    }
 
-.service-image img {
-    max-width: 100%;
-    height: auto;
-}
+    .service-image img {
+        max-width: 100%;
+        height: auto;
+    }
 
-/* --------------------------------
----------- Contact Form -----------
--------------------------------- */
+    /* --------------------------------
+    ------- Testimonial Section -------
+    -------------- Slider -------------
+    -------------------------------- */
 
-.form-row {
-    display: flex;
-    justify-content: space-between;
-}
-  
-.form-group {
-    flex-basis: 48%;
-}
+    .nav-dot {
+        cursor: pointer;
+    }
 
-.form-group input:hover {
-    border-color: darkred;
-    border-width: 2.3px;
-}
+    /* --------------------------------
+    ---------- Contact Form -----------
+    -------------------------------- */
 
-button[type="submit"] {
-    cursor: pointer;
-}
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .form-group {
+        flex-basis: 48%;
+    }
 
-.submit-container {
-    padding: 10px 20%;
-    margin-bottom: 50px;
-}
+    .form-group input:hover {
+        border-color: darkred;
+        border-width: 2.3px;
+    }
 
-button[type="submit"]:hover {
-    background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
-    color: #ffffff; /* changes text color on hover */
-    border-color: transparent;
-}
+    button[type="submit"] {
+        cursor: pointer;
+    }
 
+    .submit-container {
+        padding: 10px 20%;
+        margin-bottom: 50px;
+    }
 
+    button[type="submit"]:hover {
+        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+        color: #ffffff; /* changes text color on hover */
+        border-color: transparent;
+    }
 
-  /* --------------------------------
-------- Testimonial Section -------
--------------- Slider -------------
--------------------------------- */
+    /* --------------------------------
+    -------------- Footer -------------
+    -------------------------------- */
+    footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        background-color: var(--color-dark);
+    }
+    
+    .footer-column {
+        flex: 1;    /*set width of each column to equal */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .nav-dot {
-    cursor: pointer;
-}
-
+    .footer-links a:hover {
+        text-decoration: underline;
+        color: #9c1313;
+    }
+    
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
