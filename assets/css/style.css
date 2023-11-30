@@ -20,11 +20,11 @@
 */
 :root {
     /* CSS Variables Declaration */
-    --color-primary: #12743c;
+    --color-primary: rgb(18, 115, 60);
     --color-secondary: #9c1313;
     --color-dark: #000000da;
     --color-darker: #000000f8;
-    --color-mid-dark: #2f363151;
+    --color-mid-dark: rgba(47, 55, 49, 0.318)
     --color-mid-light: #6b6e70;
     --text-color: #cccccc;
     --color-black: black; 
@@ -200,20 +200,17 @@ nav {
 /* hero-text style */
 
 #hero-text {
-  /* --------------------------------------
----------adjust vertically middle--------
-------(50px down because of header)------
------------------------------------------*/
-    background-color: var(--color-dark);
+    background-color: rgba(0, 0, 0, 0.6); /* --color-darker with 60% opacity */
     position: absolute;
     left: 50%; /* Center horizontally */
     top: 55%; /* Center vertically */
-    transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+    transform: translate(-50%, -50%); /* Offset element by half its width and height */
     width: 90%;
     min-height: 300px;
-    padding: 15px;
+    padding: 6px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* --color-darker with 60% opacity */
+    border-radius: 10px;
 }
 
 #hero-text h1 {
@@ -237,18 +234,20 @@ nav {
 /* Hero CTA-Button */
 
 .cta-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     width: 100%;
     height: 40px;
-    line-height: 40px;
-    text-align: center;
     text-decoration: none;
     font-size: 16px;
     background-color: var(--color-dark);
     color: var(--text-color);
-    border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+    border: 0.7px solid rgba(156, 19, 19, 0.6);
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /* --------------------------------
@@ -545,43 +544,10 @@ footer {
     }
 
     /* --------------------------------
-    ---------- Menu & Navbar ----------
-    -------- min-width: 768px ---------
-    ------------------------------- */
-
-    #menu-toggler, .menu-icon {
-        display: none;
-    }
-
-    nav {
-        position: static;
-        width: auto; 
-        box-shadow: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    #menu ul {
-        display: flex;
-        align-items: center;
-    }
-
-    #menu > ul > li {
-        padding: 0 15px;
-    }
-
-    #menu a {
-        text-decoration: none;
-        color: var(--text-color);
-    }
-
-    /* --------------------------------
     ----------- Hero Section ----------
     -------- min-width: 768px ---------
     -------------------------------- */
-
-
-
+  
     /* --------------------------------
     -------- Services Section ---------
     -------- min-width: 768px ---------
@@ -696,6 +662,36 @@ footer {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
+    /* --------------------------------
+    ---------- Menu & Navbar ----------
+    -------- min-width: 992px ---------
+    ------------------------------- */
+
+    #menu-toggler, .menu-icon {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto; 
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu ul {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu > ul > li {
+        padding: 0 15px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
 
    /* Hover effect for menu links */
    #menu a:hover {
@@ -703,11 +699,57 @@ footer {
     color: #ffffff; /* changes text color on hover */
     padding-bottom: 2px;
    }
-
+  
     /* --------------------------------
     ----------- Hero Section ----------
     -------- min-width: 992px ---------
     -------------------------------- */
+   
+    #hero-text {
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero-text h1 {
+        font-size: 60px;
+        margin-bottom: 0.4em;
+        line-height: 60px;
+    }
+
+    #hero-text h2 {
+        font-size: 36px;
+        margin-bottom: 0.6em;
+    }
+
+    #hero-text p {
+        font-size: 21px;
+        margin-bottom: 10;
+        padding: 0 25px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #hero-text .cta-btn {
+        display: inline-block;
+        width: 185px;
+        margin-bottom: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 
     .cta-btn:hover {
         background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
@@ -754,7 +796,6 @@ footer {
         text-decoration: underline;
         color: #9c1313;
     }
-
 }
 
 /* Ultra wide devices (Wide screen desktops and TVs, 992px and up) */
