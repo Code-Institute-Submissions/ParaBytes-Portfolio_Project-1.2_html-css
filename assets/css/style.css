@@ -27,6 +27,7 @@
     --color-mid-dark: #2f363151;
     --color-mid-light: #6b6e70;
     --text-color: #cccccc;
+    --color-black: black; 
 }
 
 /* --------------------------------
@@ -34,7 +35,7 @@
 -------------------------------- */
 
 body {
-    background-color: var(--color-darker);
+    background-color: var(--color-black);
     font-family: "Montserrat", sans-serif;
     color: var(--text-color);
 }
@@ -143,22 +144,6 @@ header {
     color: var(--text-color);
 }
 
-.active {
-    position: relative;
-}
-
-/*.active::after: to style underline idividually via box-shadow */
-.active::after {
-    content: ""; /* creates empty content box. */
-    display: block;
-    width: 105%;
-    height: 0.1px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0px 1px 1.75px var(--color-secondary);
-}
-
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -185,7 +170,6 @@ nav {
     width: 3rem;
     height: 3rem;
     margin-top: 0.175rem;
-    cursor: pointer;
     }
 
 .menu-icon path {
@@ -193,9 +177,9 @@ nav {
     stroke: var(--text-color);
 }
 
-/* --------------------------------
--------------- Main ---------------
--------------------------------- */
+/* =========================================================================================================
+==================================================== Main= =================================================
+============================================================================================================ */
 
 
 
@@ -205,11 +189,13 @@ nav {
 
 /* Code from Love Running Project by Codeinstitute */
 #hero {
-    height: 600px;
+    min-height: 100vh; /* Minimum height is full viewport height */
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
+    margin-bottom: 10px;
 }
+
 
 /* hero-text style */
 
@@ -221,11 +207,11 @@ nav {
     background-color: var(--color-dark);
     position: absolute;
     left: 50%; /* Center horizontally */
-    top: 50%; /* Center vertically */
+    top: 55%; /* Center vertically */
     transform: translate(-50%, -50%); /* Offset the element by half its width and height */
     width: 90%;
     min-height: 300px;
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -233,7 +219,7 @@ nav {
 #hero-text h1 {
     font-size: 22px;
     line-height: 27px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     }
 
 #hero-text h2 {
@@ -243,9 +229,9 @@ nav {
 }
 
 #hero-text p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Hero CTA-Button */
@@ -271,6 +257,7 @@ nav {
 
 #clients {
     text-align: center;
+
 }
 
 .clients-text {
@@ -484,7 +471,7 @@ button[type="submit"] {
     padding: 10px;
     margin-top: 10px;
     border: none;
-    background-color: black;
+    background-color: var(--color-black);
     color: var(--text-color);
     display: block;
     text-align: center;
@@ -552,24 +539,52 @@ footer {
 /* Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-
     .underline-effect::after {
         width: 120%;
         transform: translate(-10%, 0);
     }
 
-/* --------------------------------
------------ Hero Section ----------
--------------------------------- */
+    /* --------------------------------
+    ---------- Menu & Navbar ----------
+    -------- min-width: 768px ---------
+    ------------------------------- */
 
-    .cta-btn:hover {
-        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
-        color: #ffffff; /* Changes text color on hover */
-        border-color: transparent;
+    #menu-toggler, .menu-icon {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        width: auto; 
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu ul {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu > ul > li {
+        padding: 0 15px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: var(--text-color);
     }
 
     /* --------------------------------
+    ----------- Hero Section ----------
+    -------- min-width: 768px ---------
+    -------------------------------- */
+
+
+
+    /* --------------------------------
     -------- Services Section ---------
+    -------- min-width: 768px ---------
     -------------------------------- */
 
     .service-container {
@@ -611,14 +626,12 @@ footer {
     /* --------------------------------
     ------- Testimonial Section -------
     -------------- Slider -------------
+    -------- min-width: 768px ---------
     -------------------------------- */
-
-    .nav-dot {
-        cursor: pointer;
-    }
-
+    
     /* --------------------------------
     ---------- Contact Form -----------
+    -------- min-width: 768px ---------
     -------------------------------- */
 
     .form-row {
@@ -630,28 +643,14 @@ footer {
         flex-basis: 48%;
     }
 
-    .form-group input:hover {
-        border-color: darkred;
-        border-width: 2.3px;
-    }
-
-    button[type="submit"] {
-        cursor: pointer;
-    }
-
     .submit-container {
         padding: 10px 20%;
         margin-bottom: 50px;
     }
-
-    button[type="submit"]:hover {
-        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
-        color: #ffffff; /* changes text color on hover */
-        border-color: transparent;
-    }
-
+   
     /* --------------------------------
     -------------- Footer -------------
+    -------- min-width: 768px ---------
     -------------------------------- */
     footer {
         display: flex;
@@ -659,7 +658,7 @@ footer {
         padding: 20px;
     }
 
-    .footer-column .underline-effect::after {
+    .footer-column .underline-effect::after {  /*gets rid of .underline-effect*/
         display: none;
     }
     
@@ -684,7 +683,7 @@ footer {
     }
 
     .social-links a {
-        margin: 0 13px; /* Provides spacing between icons */
+        margin: 0 13px; /* spacing between icons */
     }
 
     .footer-links a:hover {
@@ -694,9 +693,68 @@ footer {
 }
 
     /* Any other desktop-specific styles */
-
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
+
+   /* Hover effect for menu links */
+   #menu a:hover {
+    border-bottom: 1px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+    color: #ffffff; /* changes text color on hover */
+    padding-bottom: 2px;
+   }
+
+    /* --------------------------------
+    ----------- Hero Section ----------
+    -------- min-width: 992px ---------
+    -------------------------------- */
+
+    .cta-btn:hover {
+        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+        color: #ffffff; /* Changes text color on hover */
+        border-color: transparent;
+    }
+
+    /* --------------------------------
+    ------- Testimonial Section -------
+    -------------- Slider -------------
+    -------- min-width: 992px ---------
+    -------------------------------- */
+
+    .nav-dot {
+        cursor: pointer;
+    }
+
+    /*---------------------------------
+    ---------- Contact Form -----------
+    -------- min-width: 992px ---------
+    -------------------------------- */
+
+    button[type="submit"]:hover {
+        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+        color: #ffffff; /* changes text color on hover */
+        border-color: transparent;
+    }
+
+    button[type="submit"] {
+        cursor: pointer;
+    }
+
+    .form-group input:hover {
+        border-color: darkred;
+        border-width: 2.3px;
+    }
+
+    /* --------------------------------
+    -------------- Footer -------------
+    -------- min-width: 992px ---------
+    -------------------------------- */
+
+    .footer-links a:hover {
+        text-decoration: underline;
+        color: #9c1313;
+    }
+
 }
 
 /* Ultra wide devices (Wide screen desktops and TVs, 992px and up) */
