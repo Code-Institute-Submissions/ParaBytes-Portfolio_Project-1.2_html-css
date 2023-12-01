@@ -24,8 +24,9 @@
     --color-secondary: #9c1313;
     --color-dark: rgba(0, 0, 0, 0.7);
     --color-darker: rgba(0, 0, 0, 0.973);
-    --color-mid-dark: rgba(47, 55, 49, 0.318)
+    --color-mid-dark: rgba(47, 55, 49, 0.318);
     --color-mid-light: #6b6e70;
+    --color-neon: rgb(0, 102, 255); 
     --text-color: #cccccc;
     --color-black: black; 
 }
@@ -303,8 +304,7 @@ nav {
 #about p {
     font-size: 15px;
     line-height: 26px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15;
     text-align: center;
     width: 100%;
 }
@@ -378,6 +378,12 @@ li:hover .dropdown-content {
 -------------- Slider -------------
 -------------------------------- */
 
+#testimonials h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
 #testimonials {
     text-align: center;
 }
@@ -393,7 +399,6 @@ li:hover .dropdown-content {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 21.6px;
 }
 
 .testimonial {
@@ -407,7 +412,10 @@ li:hover .dropdown-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 21.6px 20px;
+    padding: 0 20px;
+    margin-top: 23px;
+    font-size: 15px;
+    line-height: 23px;
 }
 
 .testimonial-image {
@@ -416,6 +424,14 @@ li:hover .dropdown-content {
     border-radius: 50%;
     margin: 0 auto 35px;
     box-shadow: 0px 1px 6px var(--color-secondary);
+}
+
+/*change box shadow of image for testimonial 2 & 3*/
+input[name="testimonial"]:nth-of-type(2):checked ~ .testimonials .testimonial:nth-of-type(2) .testimonial-image {
+    box-shadow: 0px 1px 6px var(--color-primary);
+}
+input[name="testimonial"]:nth-of-type(3):checked ~ .testimonials .testimonial:nth-of-type(3) .testimonial-image {
+    box-shadow: 0px 1px 6px var(--color-neon);
 }
 
 /* Display the active testimonial */
@@ -465,6 +481,19 @@ input[name="testimonial"]:nth-of-type(3):checked ~ .slider-nav .nav-dot:nth-of-t
 /* --------------------------------
 ---------- Contact Form -----------
 -------------------------------- */
+
+#contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+#contact-form h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
 
 #contact-form {
     width: 80%;
@@ -768,6 +797,18 @@ footer {
     -------- min-width: 768px ---------
     -------------------------------- */
     
+    .testimonial-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 23px;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    
+
+
     /* --------------------------------
     ---------- Contact Form -----------
     -------- min-width: 768px ---------
