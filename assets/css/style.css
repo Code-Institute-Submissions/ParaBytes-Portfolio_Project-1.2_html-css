@@ -279,7 +279,7 @@ nav {
 }
 
 .brands-container img {
-    max-width: auto;
+    width: auto;
     max-height: 40px;
     object-fit: contain;
     margin: 10px;
@@ -304,7 +304,7 @@ nav {
 #about p {
     font-size: 15px;
     line-height: 26px;
-    padding: 0 15;
+    padding: 0 15px;
     text-align: center;
     width: 100%;
 }
@@ -660,7 +660,7 @@ footer {
 
     #hero-text p {
         font-size: 20px;
-        margin-bottom: 20;
+        margin-bottom: 25px;
         padding: 0 25px;
     }
 
@@ -945,7 +945,7 @@ footer {
    
     #hero-text {
         width: 50%;
-        height: 50%;
+        height: 40%;
         transform: translate(-50%, -50%);
     }
 
@@ -955,7 +955,7 @@ footer {
 
     #hero-text p {
         font-size: 21px;
-        margin-bottom: 10;
+        margin-bottom: 40px;
     }
 
     .button-container {
