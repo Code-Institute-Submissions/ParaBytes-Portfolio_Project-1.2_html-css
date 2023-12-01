@@ -303,7 +303,7 @@ nav {
 #about p {
     font-size: 15px;
     line-height: 26px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 15px;
     text-align: center;
     width: 100%;
@@ -649,10 +649,61 @@ footer {
         font-size: 20px;
     }
 
+   /* ---------------------------------
+    --------- Clients Section ---------
+    -------- min-width: 768px ---------
+    -------------------------------- */
+
+    #clients h2 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .h2-heading {
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    
+    #clients p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+    /* --------------------------------
+    ----------- About Section ---------
+    -------- min-width: 768px ---------
+    -------------------------------- */
+    
+    #about h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    
+    #about p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        width: 100%;
+    }
     /* --------------------------------
     -------- Services Section ---------
     -------- min-width: 768px ---------
     -------------------------------- */
+
+    #services h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
 
     .service-container {
         display: flex;
@@ -671,13 +722,30 @@ footer {
 
     .service-text {
         width: 50%;
+        padding: 0 20px;
+        font-size: 20px;
+        line-height: 25px;
     }
 
     .service-text.service-text-right {
-    text-align: right;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .service-text.service-text-right ul {
+        padding-left: 0; 
+        padding-right: 20px;
+        text-align: right;
+        direction: rtl; /* Right-to-left direction for bullets */
     }
 
     .service-text.service-text-left {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .service-text.service-text-left ul {
+        padding-left: 20px;
         text-align: left;
     }
 
@@ -688,6 +756,10 @@ footer {
     .service-image img {
         max-width: 100%;
         height: auto;
+    }
+
+    .dropdown-content {
+        font-size: 15px;
     }
 
     /* --------------------------------
@@ -759,7 +831,7 @@ footer {
     }
 }
 
-    /* Any other desktop-specific styles */
+/* Any other desktop-specific styles */
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
@@ -847,7 +919,7 @@ footer {
 
     .service-text ul li {
         cursor: pointer;
-        padding: 30px 0;
+        padding: 40px 0;
     }
    
 
