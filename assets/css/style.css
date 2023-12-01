@@ -840,17 +840,26 @@ footer {
     button[type="submit"] {
     font-size: 18px;
     letter-spacing: 1.5px;
+    font-weight: bold;
     }
    
     /* --------------------------------
     -------------- Footer -------------
     -------- min-width: 768px ---------
     -------------------------------- */
+
+    .footer-column h4 {
+        font-size: 20px;
+    }
+
     footer {
         display: flex;
         justify-content: center;
         padding: 20px;
-        font-weight: bold;
+    }
+
+    .footer-column p, a {
+        font-size: 16px;
     }
 
     .footer-column .underline-effect::after {  /*gets rid of .underline-effect*/
