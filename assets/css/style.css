@@ -5,7 +5,6 @@
     src: url('../fonts/quantifybold.ttf') format('truetype');
 }
 
-
 /* Asterisk wildcard selector to override default styles added by the browser */
 /*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
 * {
