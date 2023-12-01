@@ -1,6 +1,6 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-@import url("..\fonts\quantify-bold.ttf");
+@import url("..\fonts\Quantify-bold.ttf");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 /*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
@@ -589,7 +589,7 @@ footer {
         padding: 10px 20px;
         font-size: 20px;
     }
-    
+
     /* --------------------------------
     -------- Services Section ---------
     -------- min-width: 768px ---------
