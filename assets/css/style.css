@@ -1,6 +1,6 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-@import url("..\fonts\Quantify-bold.ttf");
+@import url("..\fonts\Quantify Bold.ttf");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 /*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
@@ -181,7 +181,7 @@ nav {
 #hero {
     min-height: 100vh; /* Minimum height is full viewport height */
     width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    background: url("../assets/images/hero-image.webp") no-repeat center center/cover;
     position: relative;
     margin-bottom: 10px;
 }
@@ -994,6 +994,10 @@ footer {
     -------- min-width: 992px ---------
     -------------------------------- */
 
+    .testimonial-content {
+        padding: 0 400px;
+    }
+
     .nav-dot {
         cursor: pointer;
     }
@@ -1029,6 +1033,15 @@ footer {
     }
 }
 
-/* Ultra wide devices (Wide screen desktops and TVs, 992px and up) */
+/* Large devices (Large screens & TVs, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
+      /* --------------------------------
+    ------- Testimonial Section -------
+    -------------- Slider -------------
+    -------- min-width: 1200px ---------
+    -------------------------------- */
+    .testimonial-content {
+        padding: 0 550px;
+    }
 }
