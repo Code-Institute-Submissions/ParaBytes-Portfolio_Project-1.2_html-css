@@ -995,7 +995,7 @@ footer {
     -------------------------------- */
 
     .testimonial-content {
-        padding: 0 400px;
+        padding: 0 100px;
     }
 
     .nav-dot {
@@ -1042,6 +1042,6 @@ footer {
     -------- min-width: 1200px ---------
     -------------------------------- */
     .testimonial-content {
-        padding: 0 550px;
+        padding: 0 450px;
     }
 }
