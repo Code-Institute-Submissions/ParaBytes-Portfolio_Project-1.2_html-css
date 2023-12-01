@@ -3,7 +3,7 @@
 This is my first website, and I'm excited to share it with you. It may not be perfect, but it's an important step in my development journey.
 
 <p>
-    <img src="assets/images/logo-font-rw.png" alt="Cyphex Logo" style="width:200px;">
+    <img src="assets/images/logo-font-rw.webp" alt="Cyphex Logo" style="width:200px;">
 </p>
 
 Project Overview: Cyphex Penetration Testing Landing Page.
