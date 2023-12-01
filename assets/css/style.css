@@ -1,6 +1,10 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-@import url("..\fonts\Quantify Bold.ttf");
+@font-face {
+    font-family: 'QuantifyBold';
+    src: url('../fonts/quantifybold.ttf') format('truetype');
+}
+
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 /*Copy paste Asterisk wildcard selector from Love runnung project codeinstitute*/
