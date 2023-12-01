@@ -92,7 +92,7 @@ hr {
 -------------- Header -------------
 -------------------------------- */
 header {
-    background-color: var(--color-dark);
+    background-color: var(--color-darker);
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -352,6 +352,25 @@ nav {
 .service-image img {
     max-width: 100%;
     height: auto;
+}
+
+/*Style for Dropdown - Content*/
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-top: 1px solid rgba(156, 19, 19, 0.6);
+    font-size: 14px;
+}
+
+.service-text ul li {
+    position: relative;
+    padding: 8px 0;
+}
+
+li:hover .dropdown-content {
+    display: block;
 }
 
 /* --------------------------------
@@ -818,6 +837,19 @@ footer {
         color: #ffffff; /* Changes text color on hover */
         border-color: transparent;
     }
+
+    /* --------------------------------
+    -------- Services Section ---------
+    -------- min-width: 992px ---------
+    -------------------------------- */
+
+    /* Show the dropdown content on hover */
+
+    .service-text ul li {
+        cursor: pointer;
+        padding: 30px 0;
+    }
+   
 
     /* --------------------------------
     ------- Testimonial Section -------
