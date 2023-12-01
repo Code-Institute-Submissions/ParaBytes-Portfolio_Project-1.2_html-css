@@ -22,8 +22,8 @@
     /* CSS Variables Declaration */
     --color-primary: rgb(18, 115, 60);
     --color-secondary: #9c1313;
-    --color-dark: #000000da;
-    --color-darker: #000000f8;
+    --color-dark: rgba(0, 0, 0, 0.7);
+    --color-darker: rgba(0, 0, 0, 0.973);
     --color-mid-dark: rgba(47, 55, 49, 0.318)
     --color-mid-light: #6b6e70;
     --text-color: #cccccc;
@@ -200,10 +200,10 @@ nav {
 /* hero-text style */
 
 #hero-text {
-    background-color: rgba(0, 0, 0, 0.6); /* --color-darker with 60% opacity */
+    background-color: var(--color-dark);
     position: absolute;
     left: 50%; /* Center horizontally */
-    top: 55%; /* Center vertically */
+    top: 55%; /* adjust vertically */
     transform: translate(-50%, -50%); /* Offset element by half its width and height */
     width: 90%;
     min-height: 300px;
@@ -548,6 +548,48 @@ footer {
     -------- min-width: 768px ---------
     -------------------------------- */
   
+    #hero-text {
+        width: 70%;
+        height: 40%;
+        padding: 20px;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero-text h1 {
+        font-size: 50px;
+        margin-bottom: 0.4em;
+        line-height: 60px;
+    }
+
+    #hero-text h2 {
+        font-size: 30px;
+        margin-bottom: 0.6em;
+    }
+
+    #hero-text p {
+        font-size: 20px;
+        margin-bottom: 20;
+        padding: 0 25px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cta-btn {
+        display: flex;
+        width: auto;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    
     /* --------------------------------
     -------- Services Section ---------
     -------- min-width: 768px ---------
@@ -708,47 +750,27 @@ footer {
     #hero-text {
         width: 50%;
         height: 50%;
-        padding: 20px;
-        left: 50%;
-        top: 50%;
         transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     #hero-text h1 {
         font-size: 60px;
-        margin-bottom: 0.4em;
-        line-height: 60px;
-    }
-
-    #hero-text h2 {
-        font-size: 36px;
-        margin-bottom: 0.6em;
     }
 
     #hero-text p {
         font-size: 21px;
         margin-bottom: 10;
-        padding: 0 25px;
     }
 
     .button-container {
-        display: flex;
-        justify-content: center;
         gap: 25px;
     }
 
-    #hero-text .cta-btn {
+    .cta-btn {
         display: inline-block;
         width: 185px;
-        margin-bottom: 0;
-        padding: 10px 20px;
         font-size: 16px;
-        padding: 10px 20px;
+
     }
 
     .cta-btn:hover {
