@@ -273,9 +273,7 @@ In summary, the Theme Switcher feature is a neat idea for a portfolio page, show
 Detailed testing procedures and outcomes are documented [here](TESTING.md).
 
 ### Issues and Solutions
-In the Search form, I initially used label for = " " to hint the value of the input field to the users but couldn't align it vertically within the box using Materialize classes and CSS. It was placed underneath the input field. After trying few things, I replaced it with placeholder = " " and it solved the issue.
-When I tried to sort all the terms displayed in the Glossary Page in alphabetical order using sort() function, I noticed it was sorting first capitalized items and then again items beginning with lower case letters. I used upper() function in my insert_term functionality so all charachters on a string are converted to uppercase before being stored in the database.
-During the tests, some of the buttons didn't render correctly on mobile devices on Safari and Mozilla. This was fixed by removing unnecessary type="submit" from the links styled as buttons where.
+
 
 ## Deployment
 
