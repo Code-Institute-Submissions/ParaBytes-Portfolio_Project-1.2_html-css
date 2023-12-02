@@ -622,6 +622,20 @@ footer {
 
 /* @media screen properties from Love Running Project by Codeinstitute*/
 
+/*special brakpoint range to position a single logo in the second row of clients section in the second column to be centered*/
+@media (min-width: 360px) and (max-width: 460px) {
+    .brands-container {
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brands-container img:last-child {
+        /* Position the last item in the second row, center column */
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+}
+
 /* Large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
 }
@@ -791,6 +805,10 @@ footer {
         font-size: 15px;
     }
 
+    .service-text, .service-image {
+        height: 410px;
+    }
+
     /* --------------------------------
     ------- Testimonial Section -------
     -------------- Slider -------------
@@ -952,8 +970,8 @@ footer {
     -------------------------------- */
    
     #hero-text {
-        width: 50%;
-        height: 40%;
+        width: 60%;
+        height: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -995,6 +1013,10 @@ footer {
         padding: 40px 0;
     }
    
+    .service-text, .service-image {
+        height: 500px;
+    }
+    
 
     /* --------------------------------
     ------- Testimonial Section -------
@@ -1042,14 +1064,26 @@ footer {
 /* Large devices (Large screens & TVs, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
+
+    .service-text, .service-image {
+        height: 650px
+    }
+
+    .service-container {
+        margin-bottom: 40px;
+    }
+    
+
       /* --------------------------------
     ------- Testimonial Section -------
     -------------- Slider -------------
     -------- min-width: 1200px ---------
     -------------------------------- */
+
+
     .testimonial-content {
         padding: 0 450px;
-        display: block; /* Ensure the image is a block element */
-        margin: 0 auto 35px;
+        display: block;
+        margin: 0 auto 50px;
     }
 }
