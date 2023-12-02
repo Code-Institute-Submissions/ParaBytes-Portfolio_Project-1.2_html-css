@@ -69,7 +69,7 @@ As a first-time visitor, I want to quickly grasp the purpose and content of the 
 
 ### **Footer**:
 - In the footer section, I should find essential contact information of Cyphex, including their physical address and email address.
-- Links to the Privacy Policy and Terms of Use should be present, offering transparency and trust for business clients.
+- Privacy Policy and Terms of Use should be present, offering transparency and trust for business clients.
 - The footer's social media icons should be clickable and open relevant pages in new tabs.
 
 ### **Responsiveness**:
@@ -241,7 +241,6 @@ If you're interested in diving deeper into the development and design process of
 
 ### Footer
 - **Contact Information**: Includes physical address and email.
-- **Legal Links**: Directs to Privacy Policy and Terms of Use links that lead to seperate pages.
 - **Social Media Icons**: Links to GitHub, LinkedIn, Twitter, and YouTube.
 <img src="presentation/footer.png" alt="Screenshot of the Footer">
 

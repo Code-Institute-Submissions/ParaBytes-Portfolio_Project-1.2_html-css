@@ -21,7 +21,7 @@ All internal links within the website (Home, About Us, Our Services, Testimonial
 'Request an Audit' and 'Learn More' buttons in the Hero section accurately link to the respective sections.
 
 **External Links:**
-All external links (Privacy Policy & Terms of Use), including social media icons in the footer, correctly open the intended pages in new tabs.
+All external links, including social media icons in the footer, correctly open the intended pages in new tabs.
 The email link (mailto:info@cyphex.com) in the footer successfully opens the default mail application with the correct recipient address.
 
 ### 3. Header Section
@@ -35,7 +35,28 @@ The company logo in the header successfully links back to the home page (index.h
 Text and buttons are visibly aligned and clearly legible on various devices.
 
 **Our Clients Section:**
-Company logos are displayed properly, aligned correctly, and all images load without issues.
+Company logos are displayed properly, aligned dynamically throughout different screensizes by using:
+
+```css
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* auto-fit` adjusts number of columns based on content */
+grid-auto-rows: 40px;
+```
+
+It will create a new grid container in the next row whenever the screen becomes too small to display all of them in a single row. However, on normal mobile devices, there are three logos displayed at the top and one at the bottom. Because the function creates a symmetric grid, the logo in the single row is displayed on the left, not centered. This bug was fixed by setting a specific breakpoint range and changing the order of the item positions to align them in the center.
+
+```css
+@media (min-width: 360px) and (max-width: 460px) {
+    .brands-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brands-container img:last-child {
+        /* Position the last item in the second row, center column */
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+}
+```
 
 **About Us Section:**
 Text is well-formatted and legible across different screen sizes.
@@ -47,6 +68,7 @@ Both Physical and Virtual Penetration Testing sub-sections are laid out correctl
 
 **Slider Functionality:**
 The testimonial slider operates smoothly, with radio buttons for navigation functioning properly.
+It works on all regular desktop and mobile screen resolutions. However, when zooming out further, the Testimonial section will merge into the above Our Services section, causing overlap.
 
 ### 6. Contact Form
 
@@ -57,7 +79,6 @@ The submit button works as expected, with appropriate feedback provided upon sub
 ### 7. Footer Section
 
 **Link Functionality:**
-'Privacy Policy' and 'Terms of Use' links direct to the correct pages.
 The layout and content in the footer are well-displayed on various screen sizes.
 
 ### 8. Cross-Browser and Device Compatibility
