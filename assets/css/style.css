@@ -23,12 +23,12 @@
 */
 :root {
     /* CSS Variables Declaration */
-    --color-primary: rgb(18, 115, 60);
-    --color-secondary: #9c1313;
-    --color-dark: rgba(0, 0, 0, 0.7);
+    --color-primary: #12733c;
+    --color-secondary: rgb(153, 18, 18);
+    --color-secondary-pellucid: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+    --color-dark: rgba(1, 1, 1, 0.7);
     --color-darker: rgba(0, 0, 0, 0.973);
-    --color-mid-dark: rgba(47, 55, 49, 0.318);
-    --color-mid-light: #6b6e70;
+    --color-darker-pellucid: rgba(0, 0, 0, 0.6); /* --color-darker with 60% opacity */
     --color-neon: rgb(0, 102, 255); 
     --text-color: #cccccc;
     --color-black: black; 
@@ -202,7 +202,7 @@ nav {
     min-height: 300px;
     padding: 6px;
     text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* --color-darker with 60% opacity */
+    box-shadow: 0 0 5px var(--color-darker-pellucid); 
     border-radius: 10px;
 }
 
@@ -569,7 +569,7 @@ button[type="submit"] {
     font-size: 16px;
     background-color: var(--color-dark);
     color: var(--text-color);
-    border: 0.7px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+    border: 0.7px solid var(--color-secondary-pellucid);
     border-radius: 20px;
 }
 
@@ -936,7 +936,7 @@ footer {
 
    /* Hover effect for menu links */
    #menu a:hover {
-    border-bottom: 1px solid rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+    border-bottom: 1px solid var(--color-secondary-pellucid); 
     color: #ffffff; /* changes text color on hover */
     padding-bottom: 2px;
    }
@@ -973,7 +973,7 @@ footer {
     }
 
     .cta-btn:hover {
-        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+        background-color: var(--color-secondary-pellucid);
         color: #ffffff; /* Changes text color on hover */
         border-color: transparent;
     }
@@ -1011,7 +1011,7 @@ footer {
     -------------------------------- */
 
     button[type="submit"]:hover {
-        background-color: rgba(156, 19, 19, 0.6); /* --color-secondary with 60% opacity */
+        background-color: var(--color-secondary-pellucid);
         color: #ffffff; /* changes text color on hover */
         border-color: transparent;
     }
