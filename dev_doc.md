@@ -4,7 +4,7 @@
 
 Throughout the early stages of this project's development, I encountered challenges with the recommended CodeAnywhere cloud IDE, including occasional crashes and a disruptive bug that caused saved projects to endlessly boot. As a result of these challenges, I temporarily refrained from making commits to ensure that any code I did write was not lost in these IDE-related issues.
 
-Recognizing the importance of version control, I transitioned to local development using Visual Studio and Git, providing a more stable and efficient development environment. While this transition was essential, it did result in a delay in committing code to the repository.This is the reason for the  high amount of commits within the first day, as I catch up with documenting my progress. The work on the project began on November 18th.
+Recognizing the importance of version control, I transitioned to local development using Visual Studio and Git, providing a more stable and efficient development environment. While this transition was essential, it did result in a delay in committing code to the repository.This resulted in a large junks of commits on the first day as I caught up with documenting my progress. The work on the project began on November 18th.
 
 In the subsequent sections of this guide, I will detail the steps taken during the project's development. 
 
@@ -14,7 +14,7 @@ In the subsequent sections of this guide, I will detail the steps taken during t
 - Initially, the idea was a personal portfolio webpage, but due to a lack of JavaScript knowledge, it shifted to a simple company landing page focused on Penetration Testing, a personal interest.
 - Research was conducted to understand the content and structure needed, based on other companies in the Penetration Testing industry.
 - A basic wireframe was created to outline the initial layout.
-- The project's file and folder structure, including index.html, style.css, and README.md, were set up on the same day.
+- I set up the project's file and folder structure, including index.html, style.css, and README.md, on the same day.
 
 ## Project Progress: November 19th
 
@@ -34,13 +34,13 @@ In the subsequent sections of this guide, I will detail the steps taken during t
 - Resorted to creating content with Midjourney, designing the hero image and subsequently editing it in Photoshop.
 - Focused on achieving a strong contrast by making the left 1/3 of the hero image predominantly black to enhance text readability.
 - Invested time in learning Photoshop through tutorials and learning essential shortcuts.
-- Overall the a process took way longer than initially anticipated.
+- Overall, the process took much longer than initially anticipated.
 
 ## Project Progress: November 21st
 ### Design Refinement and Styling Initiation:
 
 - Refined the logo further using Photoshop.
-- Added both the logo and the hero image to the assets images folder.
+- I added both the logo and the hero image to the assets' images folder.
 - Inserted both the logo and hero image in the HTML index.
 - Initiated the styling process in the CSS file.
 - Added fonts and created general styles for body{} and headings{} which included defining fonts and colors, as well as setting background colors.
@@ -52,7 +52,7 @@ In the subsequent sections of this guide, I will detail the steps taken during t
 ### Mobile-First Approach:
 
 - A mobile-first approach was chosen for the design.
-- Added a burger icon to the navbar for mobile navigation.
+- I added a burger icon to the navbar for mobile navigation.
 - Implemented a dropdown menu using a checkbox and toggle class in CSS.
 - Included social media links and icons in the footer section.
 - Added the SVG path for the menu icon directly in the HTML for compatibility with older browsers that lack HTML5 support.
@@ -67,11 +67,9 @@ In the subsequent sections of this guide, I will detail the steps taken during t
 ## Project Progress: November 23rd 
 ### Wireframe Finalization and Styling Initiatives:
 
-- Following the mentor session, marginal adjustments to the wireframe were made. - Ultimately created a final version using "Justinmind." <p>(However, becoming familiar with this tool took more time than initially anticipated, even though it's straight forward.)
+- Following the mentor session, marginal adjustments to the wireframe were made. Ultimately, I created a final version using "Justinmind," although becoming familiar with this tool took more time than anticipated. That's the reason why I choose not to craft a second version for the mobile version.
 
-<p>
-    <img src="presentation\wireframe.webp" alt="Wire-Frame" style="width:656px";>
-</p>
+**Link to Desktop Wireframe**: View the desktop version wireframe [here](presentation/wireframe.webp).
 
 
 ### CSS Class Development:
@@ -88,7 +86,7 @@ In the subsequent sections of this guide, I will detail the steps taken during t
 - Began crafting the Development & Design Guide to comprehensively explain the project's development journey, encompassing technical insights, challenges, coding practices, milestones, and key decisions.
 
 ## Project Progress: November 25th
-**I had big plans to conquer the coding universe, but even programmers need a break. So, I took a day off to recharge. 💻💤**
+**I had big plans to conquer the coding universe, but even programmers need a break. Therefore I took a day off to recharge. 💻💤**
 
 ## Project Progress: November 26th
 ### Documentation and Development Guide:
@@ -98,5 +96,8 @@ In the subsequent sections of this guide, I will detail the steps taken during t
 
 ## Project Progress: November 27th
 ### Version Control/GitHub:
-- Pushed git commits chronologically to GitHub via Git.<p>- (Note: For future projects I'll use VS Code with Git from the beginning to ensure proper Version Control.)
+- I pushed git commits chronologically to GitHub via Git. (Note: In future projects, I will use VS Code with Git from the beginning to ensure proper Version Control.)
 - Introduced a routine of making regular commits and pushing to GitHub when adding functional changes.
+
+
+**You can view the rest of the project progression** [here](https://github.com/ParaBytes/Portfolio_Project-1.2_html-css/commits?after=51456ec894d811b4432020e80cc26cdf2a889377+34&author=ParaBytes).
