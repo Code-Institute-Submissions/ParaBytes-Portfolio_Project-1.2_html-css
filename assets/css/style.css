@@ -1028,11 +1028,6 @@ footer {
         cursor: pointer;
     }
 
-    .form-group input:hover {
-        border-color: darkred;
-        border-width: 2.3px;
-    }
-
     /* --------------------------------
     -------------- Footer -------------
     -------- min-width: 992px ---------

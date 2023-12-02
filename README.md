@@ -273,6 +273,8 @@ In summary, the Theme Switcher feature is a neat idea for a portfolio page, show
 Detailed testing procedures and outcomes are documented [here](TESTING.md).
 
 ### Issues and Solutions
+- When using internal links the navigation bar (header) obscure the titel of the section (heading). 
+    - Fix: larger margin between sections
 
 
 ## Deployment
